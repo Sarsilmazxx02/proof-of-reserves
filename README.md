@@ -91,7 +91,170 @@ If you want to modify the Batch, you need to change the following configuration 
 #### Token Quantity
 
 ```
-AssetCounts = 350` => `AssetCounts = Required size
+Last inspection time :
+
+2024-05-20 00:00:00 (UTC+0)
+
+Excess reserve value :
+
+$  0.86B​
+
+Algorithm:
+
+Merkle Tree + zk-SNARKs
+
+Total reserve ratio :
+
+115.34%
+
+Merkle Root Mix :
+
+093d2036bc4a6bab3f956db74856ee98e43bd03b137f7129b5854750335e4940
+
+
+Customer Net Balance
+
+$  5,628,406,410
+
+Gate Wallet Balance
+
+$  6,492,214,095
+
+Excess reserve value
+
+$  863,807,685
+
+
+BTC
+Rezerv Oranı
+0123456789
+0123456789
+0123456789
+.
+0123456789
+0123456789
+%
+Müşteri Net Bakiyesi
+
+15,803.70
+
+Gate Cüzdan Bakiyesi
+
+18,420.00
+
+Gate Cüzdan Bakiyesi USD
+
+$ 1,220,628,930
+
+
+USDT
+Rezerv Oranı
+0123456789
+0
+0123456789
+.
+0123456789
+0123456789
+%
+Müşteri Net Bakiyesi
+
+895,074,126.09
+
+Gate Cüzdan Bakiyesi
+
+943,992,283.00
+
+Gate Cüzdan Bakiyesi USD
+
+$ 943,992,283
+
+
+ETH
+Rezerv Oranı
+0123456789
+0123456789
+0123456789
+.
+0123456789
+0123456789
+%
+Müşteri Net Bakiyesi
+
+208,147.69
+
+Gate Cüzdan Bakiyesi
+
+236,105.00
+
+Gate Cüzdan Bakiyesi USD
+
+$ 725,118,592
+
+
+DOGE
+Rezerv Oranı
+0123456789
+0
+0123456789
+.
+0123456789
+0123456789
+%
+Müşteri Net Bakiyesi
+
+2,008,494,984.15
+
+Gate Cüzdan Bakiyesi
+
+2,194,636,960.00
+
+Gate Cüzdan Bakiyesi USD
+
+$ 327,222,565
+
+
+ETH2
+Rezerv Oranı
+0123456789
+0123456789
+0123456789
+.
+0123456789
+0
+%
+Müşteri Net Bakiyesi
+
+68,452.52
+
+Gate Cüzdan Bakiyesi
+
+78,176.00
+
+Gate Cüzdan Bakiyesi USD
+
+$ 240,336,476
+
+
+SHIB
+Rezerv Oranı
+0123456789
+0
+0123456789
+.
+0123456789
+0123456789
+%
+Müşteri Net Bakiyesi
+
+8,401,492,279,474.73
+
+Gate Cüzdan Bakiyesi
+
+8,927,307,634,575.00
+
+Gate Cüzdan Bakiyesi USD
+
+$ 213,005,560
 ```
 
 > `AssetCounts` represents the number of tokens included in the exchange. The actual number cannot be lower than the set value. For example, if there are 420 tokens, you can modify it to 500. Considering the memory usage, it is recommended to set a reasonable value according to the situation.
