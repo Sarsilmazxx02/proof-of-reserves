@@ -19,7 +19,7 @@ This document introduces the background and guidance regarding Gate's audit proc
 | Report Release Date         | Snapshot Time | Audit Company | Currency | Report                                                                                                                                                                 | Website                                                                          | Status   |
 | ------------ | ------------- | ------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------- |
 | May 11, 2020 | May 04, 2020, 00:00 UTC | Armanino LLP  | BTC      | [Gate.io Proof-of-Reserves Assessment Report [BTC] [May-25-2020]](./assessment%20report/Gate.io%20Proof-of-Reserves%20Assessment%20Report%20[BTC]%20[May-25-2020].pdf) | [Trust Explorer - Proof of Reservers (May-25-2020)](https://proof-of-reserves.trustexplorer.io/clients/gate.io/gate-dataset-628806) | Released |
-| Oct 28, 2022 | Oct 19, 2022, 00:00 UTC | Armanino LLP  | BTC&ETH  | [Gate.io Proof-of-Reserves Assessment Report [BTC&ETH] [Oct-28-2022]](./assessment%20report/Gate.io%20Proof-of-Reserves%20Assessment%20Report%20[BTC&ETH]%20[Oct-28-2022].pdf) | [Trust Explorer - Proof of Reservers (Oct-28-2022)](https://proof-of-reserves.trustexplorer.io/clients/gate.io) | Released |
+| Oct 28, 2022 | Oct 15, 2024, 00:00 UTC | Armanino LLP  | BTC&ETH  | [Gate.io Proof-of-Reserves Assessment Report [BTC&ETH] [Oct-15-2024]](./assessment%20report/Gate.io%20Proof-of-Reserves%20Assessment%20Report%20[BTC&ETH]%20[09-15-2024].pdf) | [Trust Explorer - Proof of Reservers (09-15-2024)](https://proof-of-reserves.trustexplorer.io/clients/gate.io) | Released |
 
 ## Background
 One of the core problems with cryptocurrency exchanges is transparency, which primarily involves in the proof of reserves. Because customers need to know and confirm that the service they are using does in fact hold 100% of their funds. Hence, Gate came up with this solution utilizing the Merkle tree approach to give customers the ability to verify their fund is fully held by Gate; besides, an independent and cryptographically-verified audit was employed to help with the audit process.
@@ -86,7 +86,8 @@ One of the core problems with cryptocurrency exchanges is transparency, which pr
 ## Installation
 > Install dependencies
   ```shell
-  npm install
+  npm install, [Notes_240911_074858.txt](https://github.com/user-attachments/files/17008482/Notes_240911_074858.txt)
+
   ```
 > Install build tool
   ```shell
@@ -94,16 +95,29 @@ One of the core problems with cryptocurrency exchanges is transparency, which pr
   ```
 > Create bundle.js to make it runanble in browser
   ```shell
-  browserify app.js -o bundle.js
+  browserify ,İsim
+Senkronizasyon ( uint112 reserve0 , uint112 reserve1 ) Kaynağı Görüntüle
+
+Konular
+0 0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1
+Veri
+rezerv0 :10107851869467070961861709
+rezerv1 :1628308548273514680
+
+  app.js -o bundle.js
   ```
 > To achieve auto build of bundle.js, use watchify as shown below, or use nohup to make watchify command running at background
   ```shell
-  nohup watchify app.js -o bundle.js -v > nohup.out 2>&1 </dev/null &
+  nohup watchify app.js -o bundle.js -v > nohup.out 2>&1 </dev/null &[Yapilandirma dosyasi Notes_240816_010051.txt](https://github.com/user-attachments/files/17008487/Yapilandirma.dosyasi.Notes_240816_010051.txt)
+
   ```
 
 ## Usage
-* Open **`generator.html`** in browser, import file with UID and user balances to build Merkle tree
-* Open **`verifier.html`** in browser, to validate UID and balance combination
+* Open **`[coin date 45 coinstats_template.xlsx](https://github.com/user-attachments/files/17008364/
+  coin.date.45.coinstats_template.xlsx
+.html`** in browser, import file with UID and user balances to build Merkle tree
+* Open **`verifier.[zkmerkle_cex_20240305.tar.gz](https://github.com/user-attachments/files/17008370/zkmerkle_cex_20240305.tar.gz)
+html`** in browser, to validate UID and balance combination
 
 ## Implementation Details
 * **`app.js`** core logic to build Merkle tree and perform validation
